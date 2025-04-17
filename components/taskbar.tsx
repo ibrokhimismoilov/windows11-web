@@ -38,17 +38,17 @@ export function Taskbar({
   const getIconComponent = (iconName: string) => {
     switch (iconName) {
       case "Computer":
-        return <Monitor className="h-5 w-5" />;
+        return <Monitor className="h-5 w-5 text-white" />;
       case "Folder":
-        return <Folder className="h-5 w-5" />;
+        return <Folder className="h-5 w-5 text-white" />;
       case "Trash":
-        return <Trash2 className="h-5 w-5" />;
+        return <Trash2 className="h-5 w-5 text-white" />;
       case "FileText":
-        return <FileText className="h-5 w-5" />;
+        return <FileText className="h-5 w-5 text-white" />;
       case "Settings":
-        return <Settings className="h-5 w-5" />;
+        return <Settings className="h-5 w-5 text-white" />;
       case "Chrome":
-        return <Chrome className="h-5 w-5" />;
+        return <Chrome className="h-5 w-5 text-white" />;
       case "Explorer":
         return (
           <div className="h-5 w-5 flex items-center justify-center bg-blue-500 rounded-full text-white font-bold text-xs">
@@ -56,9 +56,9 @@ export function Taskbar({
           </div>
         );
       case "Store":
-        return <Store className="h-5 w-5" />;
+        return <Store className="h-5 w-5 text-white" />;
       default:
-        return <Folder className="h-5 w-5" />;
+        return <Folder className="h-5 w-5 text-white" />;
     }
   };
 
@@ -155,10 +155,10 @@ export function Taskbar({
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Button
-                    variant="ghost"
                     size="icon"
+                    variant="ghost"
                     className={`rounded-md ${
-                      !window.minimized ? "bg-white/20" : ""
+                      !window.minimized ? "bg-white/10" : ""
                     } ${
                       activeWindowId === window.id
                         ? "border-b-2 border-white"
