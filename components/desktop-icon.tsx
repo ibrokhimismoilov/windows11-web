@@ -56,7 +56,7 @@ export function DesktopIcon({
       </div>
       <span
         className={`mt-1 text-xs text-white font-medium text-center px-1 py-0.5 rounded ${
-          isSelected ? "bg-blue-500/70" : "bg-black/30"
+          isSelected ? "bg-blue-500/70" : ""
         } w-full`}
       >
         {title}

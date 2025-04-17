@@ -14,39 +14,39 @@ interface PersonalizationProps {
 
 export function Personalization({ changeWallpaper }: PersonalizationProps) {
   const [selectedWallpaper, setSelectedWallpaper] = useState(
-    "/placeholder.svg?height=1080&width=1920"
+    "/win1.jpg?height=1080&width=1920"
   );
   const [selectedTheme, setSelectedTheme] = useState("light");
 
   const wallpapers = [
     {
       id: "default",
-      src: "/placeholder.svg?height=1080&width=1920",
+      src: "/win1.jpg?height=1080&width=1920",
       name: "Default",
     },
     {
       id: "blue",
-      src: "/placeholder.svg?height=1080&width=1920&text=Blue+Theme",
+      src: "/win1.jpg?height=1080&width=1920&text=Blue+Theme",
       name: "Blue",
     },
     {
       id: "dark",
-      src: "/placeholder.svg?height=1080&width=1920&text=Dark+Theme",
+      src: "/win1.jpg?height=1080&width=1920&text=Dark+Theme",
       name: "Dark",
     },
     {
       id: "nature",
-      src: "/placeholder.svg?height=1080&width=1920&text=Nature",
+      src: "/win1.jpg?height=1080&width=1920&text=Nature",
       name: "Nature",
     },
     {
       id: "abstract",
-      src: "/placeholder.svg?height=1080&width=1920&text=Abstract",
+      src: "/win1.jpg?height=1080&width=1920&text=Abstract",
       name: "Abstract",
     },
     {
       id: "minimal",
-      src: "/placeholder.svg?height=1080&width=1920&text=Minimal",
+      src: "/win1.jpg?height=1080&width=1920&text=Minimal",
       name: "Minimal",
     },
   ];
@@ -60,7 +60,7 @@ export function Personalization({ changeWallpaper }: PersonalizationProps) {
   };
 
   return (
-    <div className="h-full">
+    <div className="h-full p-3">
       <h2 className="text-2xl font-semibold mb-6">Personalization</h2>
 
       <Tabs defaultValue="background" className="h-[calc(100%-3rem)]">
@@ -96,21 +96,21 @@ export function Personalization({ changeWallpaper }: PersonalizationProps) {
               >
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem
-                    value="/placeholder.svg?height=1080&width=1920&text=Picture"
+                    value="/win1.jpg?height=1080&width=1920&text=Picture"
                     id="picture"
                   />
                   <Label htmlFor="picture">Picture</Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem
-                    value="/placeholder.svg?height=1080&width=1920&text=Solid+Color"
+                    value="/win1.jpg?height=1080&width=1920&text=Solid+Color"
                     id="solid"
                   />
                   <Label htmlFor="solid">Solid color</Label>
                 </div>
                 <div className="flex items-center space-x-2">
                   <RadioGroupItem
-                    value="/placeholder.svg?height=1080&width=1920&text=Slideshow"
+                    value="/win1.jpg?height=1080&width=1920&text=Slideshow"
                     id="slideshow"
                   />
                   <Label htmlFor="slideshow">Slideshow</Label>
@@ -161,7 +161,7 @@ export function Personalization({ changeWallpaper }: PersonalizationProps) {
                       onClick={() => handleWallpaperChange(wallpaper.src)}
                     >
                       <img
-                        src={wallpaper.src || "/placeholder.svg"}
+                        src={wallpaper.src || "/win1.jpg"}
                         alt={wallpaper.name}
                         className="w-full aspect-video object-cover"
                       />

@@ -48,14 +48,10 @@ export function ContextMenu({
         openWindow("recycle-bin", "Recycle Bin", "Trash");
         break;
       case "wallpaper1":
-        changeWallpaper(
-          "/placeholder.svg?height=1080&width=1920&text=Wallpaper+1"
-        );
+        changeWallpaper("/win1.jpg?height=1080&width=1920&text=Wallpaper+1");
         break;
       case "wallpaper2":
-        changeWallpaper(
-          "/placeholder.svg?height=1080&width=1920&text=Wallpaper+2"
-        );
+        changeWallpaper("/win2.jpg?height=1080&width=1920&text=Wallpaper+2");
         break;
       default:
         break;

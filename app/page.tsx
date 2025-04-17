@@ -47,7 +47,7 @@ export default function Home() {
   });
   const [deletedItems, setDeletedItems] = useState<DeletedItemType[]>([]);
   const [wallpaper, setWallpaper] = useState(
-    "/placeholder.svg?height=1080&width=1920"
+    "/win1.jpg?height=1080&width=1920"
   );
   const { theme } = useTheme();
 

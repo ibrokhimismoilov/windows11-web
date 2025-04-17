@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Windows 11 web App",
-  description: "Windows 11 WEB App",
+  description: "Windows 11 WEB App ibrokhim",
 };
 
 export default function RootLayout({

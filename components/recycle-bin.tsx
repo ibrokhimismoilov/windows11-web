@@ -33,12 +33,12 @@ export function RecycleBin({ deletedItems }: RecycleBinProps) {
   return (
     <div className="h-full flex flex-col">
       <div className="bg-gray-100 p-3 border-b flex items-center justify-between">
-        <div className="flex items-center">
+        {/* <div className="flex items-center">
           <Trash2 className="h-5 w-5 mr-2 text-gray-600" />
           <span className="font-medium">Recycle Bin</span>
-        </div>
+        </div> */}
 
-        <div className="flex items-center gap-2">
+        {/* <div className="flex items-center gap-2">
           <Button variant="ghost" size="sm" className="h-8">
             <RefreshCw className="h-4 w-4 mr-2" />
             Refresh
@@ -58,7 +58,7 @@ export function RecycleBin({ deletedItems }: RecycleBinProps) {
               </Button>
             </>
           )}
-        </div>
+        </div> */}
       </div>
 
       <ScrollArea className="flex-1">
